@@ -66,75 +66,90 @@ console.log('Third Word: ' + thirdWord3 + ', with length: ' + thirdWordLength);
 console.log('Fourth Word: ' + fourthWord3 + ', with length: ' + fourthWordLength); 
 console.log('Fifth Word: ' + fifthWord3 + ', with length: ' + fifthWordLength);
 
+
+
+
 //TUGAS CONDITIONAL
 //Soal if-else
-var nama = 'Jhon';
-var peran = 'Penyihir';
+var nama = "Jhon";
+var peran = "Guard";
 
-if (nama === 'Jhon' && peran === 'Penyihir'){
-    console.log("Selamat datang di Dunia Werewolf, " + nama + ".")
-    if (peran == "Penyihir"){
-        console.log("Hallo Penyihir " + nama + "," + " kamu dapat melihat siapa yang menjadi werewolf!");
-    }
-    else if (peran == "Guard"){
-        console.log("Hallo Guard " + nama + "," + " kamu akan membantu melindungi temanmu dari serangan werewolf.");
-    }
-    else if (peran == "Werewolf"){
-        console.log("Hallo Werewolf " + nama + "," + " kamu akan memakan mangsa setiap malam!");
-    }
-}
-else if (nama === 'Jhon' && peran !== 'Penyihir'){
+
+if (nama != " " && peran == " "){
     console.log("Hallo " + nama + ", Pilih peranmu untuk memulai game!");
-} 
+}
+else if (nama != " " && peran == "Penyihir"){
+    console.log("Hallo Penyihir " + nama + ", kamu dapat melihat siapa yang menjadi werewolf!");
+}
+else if (nama != " " && peran == "Guard"){
+    console.log("Hallo Guard " + nama + ", kamu akan membantu melindungi temanmu dari serangan werewolf!");
+}
+else if(nama != " " && peran == "Werewolf"){
+    console.log("Hallo Werewolf " + nama + ", kamu akan memakan mangsa setiap malam!");
+}
 else {
-    console.log("Nama harus diisi!");
-} 
+    console.log("Nama harus diisi!")
+}
 
 //Soal Switch Case
 var tanggal = 17; //assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
 var bulan = 8; //assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun = 1945; //assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
-switch (bulan) {
-    case 1: 
-        bulan = "Januari";
-        break;
-    case 2:
-        bulan = "Februari";
-        break;
-    case 3:
-        bulan = "Maret";
-        break;
-    case 4:
-        bulan = "April";
-        break;
-    case 5:
-        bulan = "Mei";
-        break;
-    case 6:
-        bulan = "Juni";
-        break;
-    case 7:
-        bulan = "Juli";
-        break;
-    case 8:
-        bulan = "Agustus";
-        break;
-    case 9:
-        bulan = "September";
-        break; 
-    case 10:
-        bulan = "Oktober";
-        break;
-    case 11:
-        bulan = "November";
-        break;
-    case 12:
-        bulan = "Desember";
-        break;    
-    default:
-        bulan = "Input yang Anda masukkan salah...";
+if (tanggal >= 1 && tanggal <= 31 && bulan >=1 && bulan <= 12 && tahun >= 1900 && tahun <=2200){
+    switch (bulan) {
+        case 1: {
+            bulan = console.log(tanggal + " Januari " + tahun);
+            break;
+        }
+        case 2: {
+            bulan = console.log(tanggal + " Februari " + tahun);
+            break;
+        }
+        case 3: {
+            bulan = console.log(tanggal + " Maret " + tahun);
+            break;
+        }
+        case 4: {
+            bulan = console.log(tanggal + " April " + tahun);
+            break;
+        }
+        case 5: {
+            bulan = console.log(tanggal + " Mei " + tahun);
+            break;
+        }
+        case 6: {
+            bulan = console.log(tanggal + " Juni " + tahun);
+            break;
+        }
+        case 7: {
+            bulan = console.log(tanggal + " Juli " + tahun);
+            break;
+        }
+        case 8: {
+            bulan = console.log(tanggal + " Agustus " + tahun);
+            break;
+        }
+        case 9: {
+            bulan = console.log(tanggal + " September " + tahun);
+            break; 
+        }
+        case 10: {
+            bulan = console.log(tanggal + " Oktober " + tahun);
+            break;
+        }
+        case 11: {
+            bulan = console.log(tanggal + " November " + tahun);
+            break;
+        }
+        case 12: {
+            bulan = console.log(tanggal + " Desember " + tahun);
+            break; 
+        }   
+        default:
+            bulan = console.log("Masukkan format DD/MM/YYYY yang benar!");
+    }
 }
-
-var tampilTanggal = "Tanggal : " + tanggal + " " + bulan + " " + tahun;
-console.log(tampilTanggal);
+else{
+    console.log("Masukkan format DD/MM/YYYY yang benar!");
+}
