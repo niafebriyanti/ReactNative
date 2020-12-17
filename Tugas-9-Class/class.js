@@ -1,5 +1,5 @@
 console.log("TUGAS 9 - Class\n");
-/*
+
 console.log("~~~ NOMOR 1 - Animal Class ~~~\n");
 // Release 0
 class Animal {
@@ -45,7 +45,7 @@ console.log(kodok.jump()) // "hop hop"
 var sungokong = new Ape("Kera sakti", "Auooo")
 console.log(sungokong.yell()) // "Auooo"
  
-*/
+
 
 console.log("\n---------------------------------------------------\n");
 
