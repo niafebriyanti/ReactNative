@@ -11,7 +11,7 @@ function readBooks(time, book, callback) {
             console.log('waktu saya habis')
             callback(time)
         }
-    }, bookSpent)
+    }, book.timeSpent)
 }
 
-module.export = readBooks
+module.exports = readBooks;
