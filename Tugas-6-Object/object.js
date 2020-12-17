@@ -115,4 +115,4 @@ function naikAngkot(listPenumpang) {
    
 //   console.log(naikAngkot([])); //[]
 
-  console.log("\n---------------------------------------------------\n");
+ 
