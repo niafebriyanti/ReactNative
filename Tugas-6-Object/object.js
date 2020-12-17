@@ -1,5 +1,5 @@
 console.log("TUGAS 6 - OBJECT LITERAL\n");
-/*
+
 console.log("~~~ NOMOR 1 - Array to object ~~~\n");
 
 function arrayToObject(arr) {
@@ -84,9 +84,9 @@ function shoppingTime(memberId, money) {
   console.log(shoppingTime()); 
 
 console.log("\n---------------------------------------------------\n");
-*/
 
-console.log("~~~ NOMOR 2 - Naik angkot ~~~\n");
+
+console.log("~~~ NOMOR 3 - Naik angkot ~~~\n");
 
 function naikAngkot(listPenumpang) {
     var rute = ['A', 'B', 'C', 'D', 'E', 'F'];
